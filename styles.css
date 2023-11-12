@@ -1,0 +1,62 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+}
+
+#container {
+    display: grid;
+    /* gap: 24px; */
+    grid-template-columns: 600px 1fr 700px;
+    grid-template-rows: 500px 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+#map-container {
+    /* width: 100%;
+    height: 100%; */
+}
+
+#buttons {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#buttons > button {
+    padding: 10px 15px;
+}
+
+#map {
+    height: 90%;
+    width: 100%;
+}
+
+#puzzle-board-container {
+    padding: 10px;
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+#puzzle-board-container > div {
+    border: 1px dashed black;
+}
+
+#puzzles-container {
+    grid-column: span 3;
+    grid-row: 2;
+    background-color: rgb(130, 181, 198);
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
